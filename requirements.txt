@@ -1,0 +1,6 @@
+spacy
+fastapi
+uvicorn
+pydantic[dotenv]
+openpyxl
+assemblyai
