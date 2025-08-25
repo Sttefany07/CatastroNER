@@ -16,3 +16,50 @@ El sistema integra:
 - Validaciones específicas (DNI = 8 dígitos, teléfono = 9 dígitos iniciando en 9, región en mayúsculas, etc.).
 - API documentada automáticamente con **Swagger UI** en `/docs`.
  
+---
+
+## 📂 Estructura del proyecto
+```
+CatastroNER/
+ ├── app/                        # Código principal de la aplicación
+ │   ├── main.py                  # Punto de entrada con FastAPI
+ │   ├── pipeline_catastral.py    # Pipeline para procesamiento catastral
+ │   ├── transcriber.py           # Módulo de transcripción de audio
+ ├── data/                        # Archivos de datos y modelos
+ │   ├── ubigeo.xlsx
+ │   └── model-last-tuned/        # Carpeta con tu modelo entrenado
+ ├── tests/                       # Pruebas unitarias y de integración
+ ├── requirements.txt             # Dependencias del proyecto
+ ├── README.md                    # Documentación
+ ├── .gitignore                   # Archivos a ignorar en Git
+
+
+## ⚙️ Instalación y uso
+
+1. **Clonar el repositorio**
+   ```bash
+   git clone https://github.com/Sttefany07/CatastroNER.git
+   cd CatastroNER
+   ```
+
+2. **Instalar dependencias**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Ejecutar el servidor**
+   ```bash
+   uvicorn main:app --reload
+   ```
+
+4. **Abrir la API en el navegador**
+   ```
+   http://127.0.0.1:8000/docs
+   ```
+
+---
+
+## 👩‍💻 Autor
+Proyecto desarrollado por **Sttefany07**, enfocado en la aplicación de **IA y NLP en catastro urbano**.
+
+---
